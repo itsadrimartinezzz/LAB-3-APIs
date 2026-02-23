@@ -1,0 +1,34 @@
+{
+  "info": {
+    "_postman_id": "220b03fe-7424-40b6-a934-75c8ee9496dd",
+    "name": "RealRequest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52608026"
+  },
+  "item": [
+    {
+      "name": "PublicDomain",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "ArtworkDetail",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Image",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "info": {
+    "_postman_id": "c12d04d2-c2d9-4ea8-94c7-d121aa536c37",
+    "name": "Happy Path",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52608026"
+  },
+  "item": [
+    {
+      "name": "Run_baseUrl",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}",
+          "host": [
+            "{{baseurl}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Run_resource",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/{{resource}}",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "{{resource}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Run_id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/{{resource}}/{{id}}",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "{{resource}}",
+            "{{id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Run_query",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/{{resource}}/search?q={{query}}/ {{id}}",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "{{resource}}",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "{{query}}/ {{id}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Run_apikey",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/{{resource}}/{{apikey}}",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "{{resource}}",
+            "{{apikey}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "400 Copy",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
