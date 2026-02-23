@@ -85,8 +85,7 @@ Used in both Postman and HTTPie commands:
 ## Tools Used
 
 - **Postman** 
-- **HTTPie Desktop**
-- **HTTPie CLI** 
+- **HTTPie **
 
 ---
 
