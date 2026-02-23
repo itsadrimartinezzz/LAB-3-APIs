@@ -28,8 +28,7 @@ This repository contains the full documentation and command reference for workin
 |-------|--------|
 | **Name** | Art Institute of Chicago API |
 | **Base URL** | `https://api.artic.edu/api/v1` |
-| **Auth Type** | No authentication required (public) |
-| **Rate Limit** | Not specified |
+| **Auth Type** |  public |
 | **Docs** | https://api.artic.edu/docs |
 
 ---
