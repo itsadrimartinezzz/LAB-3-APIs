@@ -83,6 +83,8 @@ http https://www.artic.edu/iiif/2/IMAGE_ID/full/843,/0/default.jpg \
 http $BASEURL/$RESOURCE/$ID \
   Authorization:"Bearer $TOKEN" \
   AIC-User-Agent:"test"
+
+![Auth correcta](AuthCorrect.png)
 ```
 
 ## 10) Auth fallida
@@ -90,6 +92,8 @@ http $BASEURL/$RESOURCE/$ID \
 http $BASEURL/$RESOURCE/$ID \
   Authorization:"Bearer $TOKEN_FALSO" \
   AIC-User-Agent:"test"
+
+![Auth incorrecta](AuthIncorrect.png)
 ```
 
 ---
