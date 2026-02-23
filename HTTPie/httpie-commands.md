@@ -84,18 +84,18 @@ http $BASEURL/$RESOURCE/$ID \
   Authorization:"Bearer $TOKEN" \
   AIC-User-Agent:"test"
 
-![Auth correcta](AuthCorrect.png)
-```
 
+```
+![Auth correcta](AuthCorrect.png)
 ## 10) Auth fallida
 ```bash
 http $BASEURL/$RESOURCE/$ID \
   Authorization:"Bearer $TOKEN_FALSO" \
   AIC-User-Agent:"test"
 
-![Auth incorrecta](AuthIncorrect.png)
-```
 
+```
+![Auth incorrecta](AuthIncorrect.png)
 ---
 
 # Errors
