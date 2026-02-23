@@ -1,13 +1,13 @@
 # httpie-commands
 
-## Variables 
+## Variables
 ```bash
 export BASEURL="https://api.artic.edu/api/v1"
 export RESOURCE="artworks"
 export ID="129884"
 export QUERY="monet"
-export TOKEN="mi_token_valido"
-export TOKEN_FALSO="token_invalido_123"
+export TOKEN="my_valid_token"
+export TOKEN_FALSO="invalid_token_123"
 ```
 
 ---
@@ -40,7 +40,7 @@ http $BASEURL/$RESOURCE/search \
 ```
 
 ## 5) Run_apikey
-No hay apikey real en esta API, se demuestra el intento
+There is no real API key for this API, this demonstrates the attempt
 ```bash
 http $BASEURL/$RESOURCE \
   AIC-User-Agent:"test" \
@@ -68,7 +68,7 @@ http $BASEURL/$RESOURCE/$ID \
   AIC-User-Agent:"test"
 ```
 
-## 8) Image (reemplazá IMAGE_ID por el image_id que devuelve ArtworkDetail)
+## 8) Image (replace IMAGE_ID with the image_id returned by ArtworkDetail)
 ```bash
 http https://www.artic.edu/iiif/2/IMAGE_ID/full/843,/0/default.jpg \
   AIC-User-Agent:"test"
@@ -78,24 +78,24 @@ http https://www.artic.edu/iiif/2/IMAGE_ID/full/843,/0/default.jpg \
 
 # Auth
 
-## 9) Auth correcta
+## 9) Correct Auth
 ```bash
 http $BASEURL/$RESOURCE/$ID \
   Authorization:"Bearer $TOKEN" \
   AIC-User-Agent:"test"
-
-
 ```
-![Auth correcta](AuthCorrect.png)
-## 10) Auth fallida
+
+![Correct auth](AuthCorrect.png)
+
+## 10) Failed Auth
 ```bash
 http $BASEURL/$RESOURCE/$ID \
   Authorization:"Bearer $TOKEN_FALSO" \
   AIC-User-Agent:"test"
-
-
 ```
-![Auth incorrecta](AuthIncorrect.png)
+
+![Failed auth](AuthIncorrect.png)
+
 ---
 
 # Errors
@@ -120,4 +120,3 @@ http $BASEURL/admin \
   Authorization:"Bearer $TOKEN_FALSO" \
   AIC-User-Agent:"test"
 ```
-
